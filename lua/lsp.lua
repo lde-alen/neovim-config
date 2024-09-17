@@ -24,12 +24,14 @@ lspconfig.pyright.setup {
 }
 
 -- JavaScript/TypeScript LSP
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
         on_attach = on_attach,
+        filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+        root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
 }
 
 -- Lua LSP (You may need to configure sumneko_lua or lua-language-server)
-lspconfig.sumneko_lua.setup {
+lspconfig.lua_ls.setup {
         settings = {
                 Lua = {
                         runtime = {
