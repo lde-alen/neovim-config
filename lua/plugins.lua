@@ -26,5 +26,16 @@ require('packer').startup(function(use)
                 requires = { {'nvim-lua/plenary.nvim'} }  -- Telescope requires this dependency
         }
 
+        use 'ThePrimeagen/vim-be-good'  -- Plugin for practicing Vim motions with games
+
+        use {
+                'folke/which-key.nvim',       -- Plugin for keybinding discovery
+                config = function()
+                        require("which-key").setup {
+                        }
+                end
+        }
+
+
         -- Add more plugins here
 end)
