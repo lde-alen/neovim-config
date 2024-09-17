@@ -35,6 +35,19 @@ require('packer').startup(function(use)
                         }
                 end
         }
+        use {
+                'L3MON4D3/LuaSnip',
+                run = "make install_jsregexp"
+        }
+        use 'echasnovski/mini.nvim'
+        use {
+                'nvim-tree/nvim-tree.lua',
+                requires = {
+                        'nvim-tree/nvim-web-devicons',
+                }
+        }
+        use 'nvim-tree/nvim-web-devicons'
+
 
 
         -- Add more plugins here
