@@ -15,6 +15,7 @@ require'nvim-treesitter.configs'.setup {
     "markdown",
     "markdown_inline",
     "c",
+    "cpp",
     "go"
   },  -- You can install parsers for other languages here.
 
