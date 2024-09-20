@@ -3,8 +3,6 @@ vim.cmd [[packadd packer.nvim]]
 
 require("myvh.plugins.luasnip.luasnip_config")
 require("myvh.plugins.nvim-cmp.cmp")
-require("myvh.plugins.nvim-tree.nvim-tree")
-require("myvh.plugins.nvim-tree.nvim-tree-keymaps")
 require("myvh.plugins.nvim-web-devicons.nvim-web-devicons")
 require("myvh.plugins.telescope.telescope")
 require("myvh.plugins.treesitter.treesitter")

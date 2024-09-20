@@ -38,11 +38,6 @@ require('packer').startup(function(use)
         -- Quality of life pluggin for mini functionalities
         use 'echasnovski/mini.nvim'
 
-        -- NvimTree for a better visual file and folder manip
-        use {
-                'nvim-tree/nvim-tree.lua',
-                requires = { 'nvim-tree/nvim-web-devicons' }
-        }
         -- Icons for nvim-tree
         use 'nvim-tree/nvim-web-devicons'
 
